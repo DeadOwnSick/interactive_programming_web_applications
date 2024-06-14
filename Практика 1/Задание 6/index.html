@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 6</title>
+</head>
+<body>
+    <script>
+        // Выведите нечетные числа от 1 до 7, пропустив 5
+        // Функция для вывода нечетных чисел от 1 до 7, пропуская число 5
+        function printOddNumbersWithSkip() {
+            let output = "";
+            for (let i = 1; i <= 7; i++) {
+                // Пропускаем число 5
+                if (i === 5) {
+                    continue;
+                }
+                // Проверяем, является ли число нечетным
+                if (i % 2 !== 0) {
+                    output += i + " ";
+                }
+            }
+            alert("Нечетные числа от 1 до 7, пропуская число 5: " + output);
+        }
+
+        // Вызываем функцию при загрузке страницы
+        printOddNumbersWithSkip();
+    </script>
+</body>
+</html>

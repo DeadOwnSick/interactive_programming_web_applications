@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 1</title>
+</head>
+<body>
+    <div id="output1"></div>
+    <div id="output2"></div>
+    <div id="output3"></div>
+
+    <script>
+        // Создать массив 3 разными способами
+        // Способ 1: Литерал массива
+        let array1 = [1, 2, 3, 4, 5];
+        document.getElementById('output1').innerText = "Способ 1: " + array1.join(", ");
+
+        // Способ 2: С помощью конструктора Array()
+        let array2 = new Array(1, 2, 3, 4, 5);
+        document.getElementById('output2').innerText = "Способ 2: " + array2.join(", ");
+
+        // Способ 3: Добавление элементов по одному
+        let array3 = [];
+        array3.push(1);
+        array3.push(2);
+        array3.push(3);
+        array3.push(4);
+        array3.push(5);
+        document.getElementById('output3').innerText = "Способ 3: " + array3.join(", ");
+    </script>
+</body>
+</html>

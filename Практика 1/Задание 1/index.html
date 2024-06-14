@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 1</title>
+</head>
+<body>
+    <script>
+        // Запросить у пользователя знак зодиака, и в зависимости от ответа выдать всплывающее окно приветствия (вместо знака зодиака, можно запросить другие данные, предполагающие несколько вариантов ответа) (switch)
+        // Запрашиваем у пользователя его знак зодиака
+        let zodiacSign = prompt("Введите ваш знак зодиака:");
+
+        if (zodiacSign !== null) {
+            // Приводим введенное значение к нижнему регистру для удобства сравнения
+            zodiacSign = zodiacSign.toLowerCase();
+
+            // Используем оператор switch для выбора приветствия в зависимости от знака зодиака
+            switch (zodiacSign) {
+                case 'овен':
+                    alert("Привет, Овен!");
+                    break;
+                case 'телец':
+                    alert("Привет, Телец!");
+                    break;
+                case 'близнецы':
+                    alert("Привет, Близнецы!");
+                    break;
+                case 'рак':
+                    alert("Привет, Рак!");
+                    break;
+                case 'лев':
+                    alert("Привет, Лев!");
+                    break;
+                case 'дева':
+                    alert("Привет, Дева!");
+                    break;
+                case 'весы':
+                    alert("Привет, Весы!");
+                    break;
+                case 'скорпион':
+                    alert("Привет, Скорпион!");
+                    break;
+                case 'стрелец':
+                    alert("Привет, Стрелец!");
+                    break;
+                case 'козерог':
+                    alert("Привет, Козерог!");
+                    break;
+                case 'водолей':
+                    alert("Привет, Водолей!");
+                    break;
+                case 'рыбы':
+                    alert("Привет, Рыбы!");
+                    break;
+                default:
+                    alert("Извините, я не знаю такого знака зодиака. Пожалуйста, введите корректный знак.");
+            }
+        }
+    </script>
+</body>
+</html>

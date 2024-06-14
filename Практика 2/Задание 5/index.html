@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 5</title>
+</head>
+<body>
+    <div id="output"></div>
+
+    <script>
+        // Создайте 2 массива. Объедините их в один и выведите на экран полученный массив
+        // Создаем два массива
+        let array1 = [1, 2, 3];
+        let array2 = [4, 5, 6];
+
+        // Объединяем массивы в один
+        let mergedArray = array1.concat(array2);
+
+        // Получаем элемент вывода
+        let output = document.getElementById('output');
+
+        // Выводим объединенный массив на экран
+        output.innerText = "Объединенный массив: " + mergedArray.join(", ");
+    </script>
+</body>
+</html>

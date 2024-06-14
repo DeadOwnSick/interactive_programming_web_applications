@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 2</title>
+</head>
+<body>
+    <div id="output"></div>
+
+    <script>
+        // Выведите на экран 5 член вашего массива затем измените его значение 
+        // Создаем массив
+        let myArray = [10, 20, 30, 40, 50];
+
+        // Выводим 5-й элемент массива на экран
+        document.getElementById('output').innerText = "5-й элемент массива: " + myArray[4];
+
+        // Меняем значение 5-го элемента массива
+        myArray[4] = 55;
+        // Выводим измененное значение 5-го элемента массива на экран
+        document.getElementById('output').innerText += "\nИзмененное значение 5-го элемента массива: " + myArray[4];
+    </script>
+</body>
+</html>

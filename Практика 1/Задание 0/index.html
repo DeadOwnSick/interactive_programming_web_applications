@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 0</title>
+</head>
+
+<body>
+    <div id="output"></div>
+    <script>
+        // Создать переменную, узнать ее тип, добавить вывод на экран текста, в зависимости от значения (if else)
+        // Создаем переменную
+        let variable1 = "Привет!"; // строка
+        let variable2 = 123; // число
+        let variable3 = true; // булево значение
+        let variable4; // неопределенное значение
+        let variable5 = {}; // объект
+        let variable6 = function () { }; // функция
+
+        // Определяем тип переменной
+        let variableType = typeof variable;
+
+        // Выводим текст в зависимости от типа переменной
+        if (variableType === 'string') {
+            document.getElementById('output').innerText = "Переменная является строкой.";
+        } else if (variableType === 'number') {
+            document.getElementById('output').innerText = "Переменная является числом.";
+        } else if (variableType === 'boolean') {
+            document.getElementById('output').innerText = "Переменная является булевым значением.";
+        } else if (variableType === 'undefined') {
+            document.getElementById('output').innerText = "Переменная не определена.";
+        } else if (variableType === 'object') {
+            document.getElementById('output').innerText = "Переменная является объектом.";
+        } else if (variableType === 'function') {
+            document.getElementById('output').innerText = "Переменная является функцией.";
+        } else {
+            document.getElementById('output').innerText = "Неизвестный тип переменной.";
+        }
+
+        document.getElementById('output').innerText =
+            variable1 + `- переменная 1 является типом: ${typeof variable1}\n` +
+            variable2 + `- переменная 2 является типом: ${typeof variable2}\n` +
+            variable3 + `- переменная 3 является типом: ${typeof variable3}\n` +
+            variable4 + `- переменная 4 является типом: ${typeof variable4}\n` +
+            variable5 + `- переменная 5 является типом: ${typeof variable5}\n` +
+            variable6 + `- переменная 6 является типом: ${typeof variable6}`;
+    </script>
+</body>
+
+</html>

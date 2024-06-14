@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 2</title>
+</head>
+<body>
+    <h2>Цикл for:</h2>
+    <div id="output1"></div>
+
+    <h2>Цикл while:</h2>
+    <div id="output2"></div>
+
+    <h2>Цикл do...while:</h2>
+    <div id="output3"></div>
+    
+    <script>
+        // Вывести все числа от 1 до 40, с использованием 3-х разных циклов
+        // Цикл for
+        let output1 = document.getElementById('output1');
+        let numbers1 = '';
+        for (let i = 1; i <= 40; i++) {
+            numbers1 += i + ' ';
+        }
+        output1.innerText = numbers1;
+
+        // Цикл while
+        let output2 = document.getElementById('output2');
+        let numbers2 = '';
+        let j = 1;
+        while (j <= 40) {
+            numbers2 += j + ' ';
+            j++;
+        }
+        output2.innerText = numbers2;
+
+        // Цикл do while
+        let output3 = document.getElementById('output3');
+        let numbers3 = '';
+        let k = 1;
+        do {
+            numbers3 += k + ' ';
+            k++;
+        } while (k <= 40);
+        output3.innerText = numbers3;
+    </script>
+</body>
+</html>

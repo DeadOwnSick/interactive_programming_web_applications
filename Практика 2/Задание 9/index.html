@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 9</title>
+</head>
+<body>
+    <div id="output"></div>
+
+    <script>
+        // Получите сегодняшнюю дату и выведите ее на экран
+        // Получаем текущую дату
+        let currentDate = new Date();
+
+        // Форматируем дату в строку для вывода
+        let formattedDate = currentDate.toLocaleDateString();
+
+        // Получаем элемент вывода
+        let output = document.getElementById('output');
+
+        // Выводим сегодняшнюю дату на экран
+        output.innerText = "Сегодняшняя дата: " + formattedDate;
+    </script>
+</body>
+</html>

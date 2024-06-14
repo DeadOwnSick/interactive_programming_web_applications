@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 7</title>
+</head>
+<body>
+    <div id="output"></div>
+
+    <script>
+        // Удалите последний член получившегося массива и выведите это значение на экран
+        // Создаем два массива
+        let array1 = [1, 2, 3];
+        let array2 = [4, 5, 6];
+
+        // Объединяем массивы в один
+        let mergedArray = array1.concat(array2);
+
+        // Получаем последний элемент объединенного массива и удаляем его
+        let lastElement = mergedArray.pop();
+
+        // Получаем элемент вывода
+        let output = document.getElementById('output');
+
+        // Выводим удаленный элемент на экран
+        output.innerText = "Удаленный первый раз последний элемент: " + lastElement;
+
+        // Удаляем последний элемент второй раз
+        let secondLastElement = mergedArray.pop();
+
+        // Выводим удаленный элемент на экран
+        output.innerText += "\nУдаленный второй раз последний элемент: " + secondLastElement;
+    </script>
+</body>
+</html>

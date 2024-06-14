@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 11</title>
+</head>
+<body>
+    <div id="output"></div>
+
+    <script>
+        // Напишите функцию, подсчитывающую произведение двух случайных чисел в промежутке от нуля до 50
+        // Функция для получения случайного числа в диапазоне от min до max
+        function getRandomNumber(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        // Функция для подсчета произведения двух случайных чисел в диапазоне от 0 до 50
+        function calculateRandomProduct() {
+            let num1 = getRandomNumber(0, 50);
+            let num2 = getRandomNumber(0, 50);
+            return num1 * num2;
+        }
+
+        // Вызываем функцию для подсчета произведения и выводим результат на экран
+        let output = document.getElementById('output');
+        output.innerText = "Произведение двух случайных чисел от 0 до 50: " + calculateRandomProduct();
+    </script>
+</body>
+</html>

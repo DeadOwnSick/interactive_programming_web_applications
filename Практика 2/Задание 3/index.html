@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 3</title>
+    <style>
+        #output {
+            border: 1px solid black;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="output"></div>
+
+    <script>
+        // Узнайте длину вашего массива и выведите ее значение при наведении на любой элемент
+        // Создаем массив
+        let myArray = [10, 20, 30, 40, 50];
+
+        // Получаем элемент вывода
+        let output = document.getElementById('output');
+
+        // Функция для обновления содержимого элемента вывода
+        function updateOutput() {
+            if (output.innerText === "") {
+                // Показываем сам массив
+                output.innerText = "Массив: " + myArray.join(", ");
+            } else {
+                // Показываем длину массива
+                output.innerText = "Длина массива: " + myArray.length;
+            }
+        }
+
+        // Вызываем функцию для обновления содержимого элемента вывода при загрузке страницы
+        updateOutput();
+
+        // Вызываем функцию для обновления содержимого элемента вывода при наведении на него
+        output.onmouseover = updateOutput;
+    </script>
+</body>
+</html>

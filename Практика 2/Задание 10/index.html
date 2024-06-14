@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 10</title>
+</head>
+<body>
+    <div id="output"></div>
+
+    <script>
+        // Выведите сегодняшнюю дату в формате 11 ноября 2020 года
+        // Получаем текущую дату
+        let currentDate = new Date();
+
+        // Получаем день, месяц и год
+        let day = currentDate.getDate();
+        let monthIndex = currentDate.getMonth();
+        let year = currentDate.getFullYear();
+
+        // Массив с названиями месяцев
+        let monthNames = [
+            "января", "февраля", "марта",
+            "апреля", "мая", "июня",
+            "июля", "августа", "сентября",
+            "октября", "ноября", "декабря"
+        ];
+
+        // Форматируем дату в нужный формат
+        let formattedDate = day + ' ' + monthNames[monthIndex] + ' ' + year + ' года';
+
+        // Получаем элемент вывода
+        let output = document.getElementById('output');
+
+        // Выводим сегодняшнюю дату на экран
+        output.innerText = "Сегодняшняя дата: " + formattedDate;
+    </script>
+</body>
+</html>

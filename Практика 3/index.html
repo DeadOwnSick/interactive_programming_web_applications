@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Изучение JavaScript</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Рады вас приветствовать на пути изучения JavaScript</h1>
+        <p id="greeting"></p>
+        <input style="width: 200px;" type="text" id="username" placeholder = "Пожалуйста, представьтесь">
+        <button id="saveBtn">Сохранить</button>
+        <button id="showSplashBtn">Включить заставку</button>
+        <div id="splashScreen"
+            style="background-image: url(images/background.png); display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); justify-content: center; align-items: center; z-index: 999; ">
+            <div style="color: white">
+                <h1>Добро пожаловать!</h1>
+                <p>Сегодня <span id="splashDate"></span></p>
+                <p>Привет, <span id="splashUsername"></span>!</p>
+                <p>Кликните куда-нибудь чтобы продолжить</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h2>О языке JavaScript</h2>
+        <p>JavaScript - это язык программирования, который используется для создания динамических веб-сайтов и
+            приложений.</p>
+        <h3>Зачем нужен JavaScript?</h3>
+        <ul>
+            <li>Делать сайт интерактивным</li>
+            <li>Создавать веб-приложения</li>
+            <li>Создавать игры</li>
+            <li>Создавать мобильные приложения</li>
+            <li>И многое, много другое</li>
+        </ul>
+        <h3>Когда JavaScript не пригодится?</h3>
+        <ul>
+            <li>В сложных вычислительных задачах</li>
+            <li>В низкоуровневом системном программировании</li>
+            <li>В приложениях, которые работают в режиме реального времени со строгими временными требованиями</li>
+        </ul>
+        <h2>Примеры задач, которые может выполнять JavaScript</h2>
+        <h3>Практическая работа 1</h3>
+        <button onclick="executeTask0P1()">Задание 0</button>
+        <button onclick="executeTask1P1()">Задание 1</button>
+        <button onclick="executeTask2P1()">Задание 2</button>
+        <h3>Практическая работа 2</h3>
+        <button onclick="executeTask1P2()">Задание 1</button>
+        <button onclick="executeTask2P2()">Задание 2</button>
+        <div>
+            <h2>Тест по JavaScript</h2>
+            <form name="quizForm">
+                <ol>
+                    <li>
+                        <h3>Какое ключевое слово используется для объявления функций в JavaScript?</h3>
+                        <div>
+                            <input type="radio" name="question2" value="a">func
+                        </div>
+                        <div>
+                            <input type="radio" name="question2" value="b">function
+                        </div>
+                        <div>
+                            <input type="radio" name="question2" value="c">def
+                        </div>
+                        <div>
+                            <input type="radio" name="question2" value="d">subroutine
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Что такое DOM в JavaScript?</h3>
+                        <div>
+                            <input type="radio" name="question3" value="a">Объектная модель документа
+                        </div>
+                        <div>
+                            <input type="radio" name="question3" value="b">Структура данных DOM
+                        </div>
+                        <div>
+                            <input type="radio" name="question3" value="c">База данных DOM
+                        </div>
+                        <div>
+                            <input type="radio" name="question3" value="d">Фреймворк DOM
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Какой оператор используется для объединения двух или более массивов в JavaScript?</h3>
+                        <div>
+                            <input type="radio" name="question8" value="a">concat()
+                        </div>
+                        <div>
+                            <input type="radio" name="question8" value="b">join()
+                        </div>
+                        <div>
+                            <input type="radio" name="question8" value="c">push()
+                        </div>
+                        <div>
+                            <input type="radio" name="question8" value="d">slice()
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Какой метод используется для добавления элемента в конец массива в JavaScript?</h3>
+                        <div>
+                            <input type="radio" name="question4" value="a">push()
+                        </div>
+                        <div>
+                            <input type="radio" name="question4" value="b">pop()
+                        </div>
+                        <div>
+                            <input type="radio" name="question4" value="c">shift()
+                        </div>
+                        <div>
+                            <input type="radio" name="question4" value="d">unshift()
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Какой оператор используется для проверки равенства и типа данных?</h3>
+                        <div>
+                            <input type="radio" name="question5" value="a">==
+                        </div>
+                        <div>
+                            <input type="radio" name="question5" value="b">===
+                        </div>
+                        <div>
+                            <input type="radio" name="question5" value="c">=
+                        </div>
+                        <div>
+                            <input type="radio" name="question5" value="d">!=
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Какой метод используется для удаления элемента из массива по индексу?</h3>
+                        <div>
+                            <input type="radio" name="question6" value="a">splice()
+                        </div>
+                        <div>
+                            <input type="radio" name="question6" value="b">slice()
+                        </div>
+                        <div>
+                            <input type="radio" name="question6" value="c">remove()
+                        </div>
+                        <div>
+                            <input type="radio" name="question6" value="d">delete()
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Какой метод используется для получения случайного числа в JavaScript?</h3>
+                        <div>
+                            <input type="radio" name="question7" value="a">random()
+                        </div>
+                        <div>
+                            <input type="radio" name="question7" value="b">round()
+                        </div>
+                        <div>
+                            <input type="radio" name="question7" value="c">floor()
+                        </div>
+                        <div>
+                            <input type="radio" name="question7" value="d">ceil()
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Какой метод используется для преобразования строки в число в JavaScript?</h3>
+                        <div>
+                            <input type="radio" name="question9" value="a">toNumber()
+                        </div>
+                        <div>
+                            <input type="radio" name="question9" value="b">parseInt()
+                        </div>
+                        <div>
+                            <input type="radio" name="question9" value="c">parseFloat()
+                        </div>
+                        <div>
+                            <input type="radio" name="question9" value="d">convertNumber()
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Какой оператор используется для доступа к свойствам объекта в JavaScript?</h3>
+                        <div>
+                            <input type="radio" name="question10" value="a">.
+                        </div>
+                        <div>
+                            <input type="radio" name="question10" value="b">->
+                        </div>
+                        <div>
+                            <input type="radio" name="question10" value="c">::
+                        </div>
+                        <div>
+                            <input type="radio" name="question10" value="d">:
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Какое слово используется для определения переменных, которые не могут быть изменены?</h3>
+                        <div>
+                            <input type="radio" name="question1" value="a">var
+                        </div>
+                        <div>
+                            <input type="radio" name="question1" value="b">const
+                        </div>
+                        <div>
+                            <input type="radio" name="question1" value="c">let
+                        </div>
+                        <div>
+                            <input type="radio" name="question1" value="d">static
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Какой метод используется для удаления элемента из массива по индексу?</h3>
+                        <div>
+                            <input type="radio" name="question6" value="a">splice()
+                        </div>
+                        <div>
+                            <input type="radio" name="question6" value="b">slice()
+                        </div>
+                        <div>
+                            <input type="radio" name="question6" value="c">remove()
+                        </div>
+                        <div>
+                            <input type="radio" name="question6" value="d">delete()
+                        </div>
+                    </li>
+                </ol>
+                <button type="submit">Проверить мои ответы</button>
+            </form>
+            <div id="results"></div>
+            <div id="answers"></div>
+        </div>
+    </main>
+    <script src="script/script.js"></script>
+    <footer>
+        <p>&copy; 2024 JavaScript для новичков</p>
+    </footer>
+</body>
+
+</html>
